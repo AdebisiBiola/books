@@ -23,7 +23,7 @@ jobs:
 
         - name: "Push image to Dockerhub"
           run: |
-            docker push adebisibiola/books-app:APP_VERSION .
+            docker push adebisibiola/books-app:${{ env.APP_VERSION }} /home/ma/Documents/k8s-strategy/Dockerfile .
 
         ## This action is to send email notification for the randomly generated app version numbers
         - name: Send email notifications for the latest version of deployment
