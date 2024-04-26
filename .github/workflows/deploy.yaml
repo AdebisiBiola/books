@@ -31,7 +31,7 @@ jobs:
         #     docker push adebisibiola/books-app:${{ env.APP_VERSION }}
 
         ## This action is to send email notification for the randomly generated app version numbers
-        - name: Send email notification for the latest version of deployment
+        - name: Send email notifications for the latest version of deployment
           uses: dawidd6/action-send-mail@v3
           with:
             username: funkebiola17@gmail.com
